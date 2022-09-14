@@ -87,9 +87,6 @@ export default {
         console.log(data)
 
         snapshot.forEach((snp) => {
-
-          console.log('childSnapshot.key: ', snp.key)
-          console.log('childSnapshot.val(): ', snp.val())
           messages.push({
             id: snp.key,
             username: data[snp.key].username,
