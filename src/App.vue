@@ -83,8 +83,6 @@ export default {
       onValue(messagesRef, (snapshot) => {
         const data = snapshot.val();
         let messages = [];
-        console.log('data')
-        console.log(data)
 
         snapshot.forEach((snp) => {
           messages.push({
